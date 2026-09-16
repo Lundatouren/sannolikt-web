@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sannolikt – support</title>
+<style>
+  :root {
+    --ink: #10120f;
+    --faint: #5c635c;
+    --voice: #065234;
+    --page: #f4f4f0;
+    --card: #ffffff;
+    --line: rgba(0,0,0,.09);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #eceee9; --faint: #9aa199; --voice: #5c9e73;
+      --page: #0f1012; --card: #1c1e1d; --line: rgba(255,255,255,.10);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 64px 0 80px; }
+  .mark { font-size: 44px; line-height: 1; color: var(--voice); font-weight: 600; }
+  h1 { font-size: 30px; letter-spacing: -.02em; margin: 14px 0 6px; }
+  .lead { color: var(--faint); margin: 0 0 40px; font-size: 19px; }
+  h2 { font-size: 17px; margin: 36px 0 8px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--voice); }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 22px 24px; margin: 28px 0;
+  }
+  .card h2:first-child { margin-top: 0; }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  footer {
+    margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line);
+    color: var(--faint); font-size: 14px;
+  }
+  footer a { color: var(--faint); }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="mark">~</div>
+  <h1>Sannolikt</h1>
+  <p class="lead">Sju väderkällor är sällan överens. Appen visar hur oense de är om just din starttid.</p>
+
+  <p>Sannolikt hämtar prognosen för golfbanans exakta punkt – inte för närmaste tätort – från sju oberoende källor, och räknar fram hur överens de är om att rundan blir torr.</p>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>Hittat ett fel, eller en bana som inte går att söka fram? Skriv gärna, så svarar jag.</p>
+    <p><a href="mailto:richard.bostam@icloud.com">richard.bostam@icloud.com</a></p>
+    <p style="color:var(--faint);font-size:15px;margin:0">Skriv gärna vilken bana och vilken starttid det gäller – det gör felet mycket lättare att hitta.</p>
+  </div>
+
+  <h2>Vanliga frågor</h2>
+
+  <p><strong>Varför visar appen färre än sju källor?</strong><br>
+  Källorna faller ibland bort tillfälligt. Appen döljer det aldrig – står det "3 av 7 källor" är det precis vad det betyder, och siffran vilar då på tunnare grund. Vissa företagsnätverk med trafikinspektion blockerar dessutom enskilda källor.</p>
+
+  <p><strong>Varför är chansen låg fast det bara ska komma 0,2 mm?</strong><br>
+  Procenten och millimetrarna svarar på olika frågor. Procenten säger hur troligt det är att du blir blöt, millimetrarna hur blöt. Ett långt duggregn ger hög risk och låg mängd.</p>
+
+  <p><strong>Varför får jag inga notiser?</strong><br>
+  Det är meningen. Appen hör av sig bara när den ändrat sig om en runda du angett – som mest två gånger per runda. Hör du inget står prognosen still.</p>
+
+  <p><strong>Hittas min golfbana?</strong><br>
+  Svenska banor söks upp via kartan. Saknas din, eller ligger koordinaten fel, hör av dig så lägger jag in den.</p>
+
+  <h2>Källor</h2>
+  <p>Apple Weather, MET Norway (YR), SMHI, DMI, ECMWF, GFS och ICON. Radar från MET Norway. Observationer från SMHI.</p>
+
+  <footer>
+    <p><a href="integritet.html">Integritetspolicy</a></p>
+    <p>Sannolikt är gratis, har inga annonser och samlar ingenting om dig.</p>
+  </footer>
+
+</main>
+</body>
+</html>
